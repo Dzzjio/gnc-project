@@ -1,0 +1,45 @@
+.accordion {
+    margin-bottom: 15px;  
+    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 3px 2px 2px #30584D;
+    border-radius: 10px;
+
+    &:hover {
+        box-shadow: 5px 4px 2px #30584D;
+  
+    }
+  }
+  
+  .accordion-title {
+    font-weight: bold;
+    background-color: transparent;
+  }
+  
+  .accordion-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-icon.expanded {
+    transform: rotate(45deg);
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    text-align: start;
+  }
+
+.accordion-icon {
+  width: 12px;
+}

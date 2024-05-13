@@ -1,0 +1,43 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "about",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "about",
+    "contact": "Contact",
+    "projects": "Projects",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?",
+    "rights": "All Rights Reserved"
+  },
+  "Home": {
+    "title": "GNC",
+    "projects": "Projects",
+    "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?"
+  },
+  "About": {
+    "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?",
+    "faq": "Frequently Asked Questions",
+    "answer1": "Content for section 1",
+    "answer2": "Content for section 2",
+    "answer3": "Content for section 3",
+    "answer4": "Content for section 4"
+  },
+  "Contact": {
+    "getInTouch": "Get In Touch!",
+    "fillForm": "Fill the form and we'll contact you shortly",
+    "or": "or",
+    "sendEmail": "Send Us an Email",
+    "ContactUsDirectly": "Contact Us Directly",
+    "FindUsOnFacebook": "Find Us On Facebook",
+    "name": "name",
+    "email": "email",
+    "message": "message",
+    "send": "send"
+  }
+}
