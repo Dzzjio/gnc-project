@@ -83,3 +83,9 @@ export const StyledHeaderContainer = styled.header`
     fill: ${Colors.brandColor};
   }
 `
+export const StyledLangOptions = styled.select`
+  margin-bottom: -5px;
+  border: none;
+  border-bottom: 2px solid #30584d;
+  outline: none;
+`

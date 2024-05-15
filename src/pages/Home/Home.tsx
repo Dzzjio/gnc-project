@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Button from '../../components/UI/Button'
 import jungle from '../../assets/Images/jungle.jpg'
+import HomeSectionTwo from './homeSection2'
 
 const HomePage = () => {
   const [t] = useTranslation('global')
@@ -25,7 +26,7 @@ const HomePage = () => {
             </Link>
           </div>
         </section>
-        {/* <HomeSectionTwo /> */}
+        <HomeSectionTwo />
       </main>
     </>
   )

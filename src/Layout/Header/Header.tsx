@@ -1,25 +1,23 @@
-import { NavLink } from 'react-router-dom'
-import { StyledHeader, StyledHeaderContainer } from './styled'
-import { useState } from 'react'
-import MobileMenu from '../MobileMenu/index'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNavicon } from '@fortawesome/free-solid-svg-icons'
-import { useTranslation } from 'react-i18next'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { StyledHeader, StyledHeaderContainer, StyledLangOptions } from './styled';
+import MobileMenu from '../MobileMenu/index';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNavicon } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-  const [t, i18n] = useTranslation('global')
+  const [t, i18n] = useTranslation('global');
 
-  const [showGeoFlag, setShowGeoFlag] = useState<boolean>(true)
-  const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false)
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   const setBodyFixed = () => {
-    document.body.classList.toggle('fixed')
-  }
+    document.body.classList.toggle('fixed');
+  };
 
-  const handleChangeLangs = (lang: string) => {
-    i18n.changeLanguage(lang)
-    setShowGeoFlag((prev) => !prev)
-  }
+  const handleChangeLangs = (lang: string | undefined) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <StyledHeader>
@@ -47,40 +45,32 @@ const Header = () => {
           </ul>
         </nav>
         <div>
-          {showGeoFlag ? (
-            <img
-              className="flag-img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/1280px-Flag_of_Georgia.svg.png"
-              alt="geo"
-              onClick={() => handleChangeLangs('en')}
-            />
-          ) : (
-            <img
-              className="flag-img"
-              src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
-              alt="uk"
-              onClick={() => handleChangeLangs('ge')}
-            />
-          )}
+          <StyledLangOptions
+            id="language-select"
+            onChange={(e) => handleChangeLangs(e.target.value)}
+          >
+            <option value="en">English</option>
+            <option value="ge">Georgian</option>
+          </StyledLangOptions>
         </div>
         <FontAwesomeIcon
           className="burger-menu"
           icon={faNavicon}
           onClick={() => {
-            setOpenMobileMenu(true)
-            setBodyFixed()
+            setOpenMobileMenu(true);
+            setBodyFixed();
           }}
         />
       </StyledHeaderContainer>
       <MobileMenu
         open={openMobileMenu}
         onClose={() => {
-          setOpenMobileMenu(false)
-          setBodyFixed()
+          setOpenMobileMenu(false);
+          setBodyFixed();
         }}
       />
     </StyledHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

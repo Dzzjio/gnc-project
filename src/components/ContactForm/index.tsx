@@ -24,7 +24,7 @@ export const ContactForm = () => {
   const [focused, setFocused] = useState({ name: false, message: false, email: false })
 
   // Function to handle input focus
-  const handleFocus = (field: any) => {
+  const handleFocus = (field: string) => {
     setFocused({ ...focused, [field]: true })
   }
 
