@@ -15,7 +15,7 @@ export const StyledHeaderContainer = styled.header`
   padding: 10px 0;
 
   & > a > img {
-    width: 100px;
+    width: 50px;
     height: 50px;
     object-fit: contain;
     cursor: pointer;
