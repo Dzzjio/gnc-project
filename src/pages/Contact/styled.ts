@@ -43,6 +43,10 @@ export const ContactPageLeft = styled.div`
     border-radius: 10px;
     box-shadow: 3px 2px 1px ${Colors.brandColor};
 
+    @media ( max-width:  ${Breakpoints.tablet}) {
+      width: 100%;
+    }
+
     & > span:first-child > * {
       width: 50px;
       height: 50px;
