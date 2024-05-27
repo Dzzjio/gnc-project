@@ -1,92 +1,102 @@
-import { useState } from 'react'
-import { StyledContactForm } from './styled'
-import ReCAPTCHA from 'react-google-recaptcha'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import { useTranslation } from 'react-i18next'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useRef, useState } from 'react';
+import { StyledContactForm } from './styled';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
-  const [t] = useTranslation('global')
+  const [t] = useTranslation('global');
 
   // State to store form values
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-  })
+  });
 
   const [error, setError] = useState({
     name: false,
     email: false,
     message: false,
-  })
+  });
 
-  const [focused, setFocused] = useState({ name: false, message: false, email: false })
+  const [focused, setFocused] = useState({ name: false, message: false, email: false });
 
   // Function to handle input focus
   const handleFocus = (field: string) => {
-    setFocused({ ...focused, [field]: true })
-  }
-
-  // Function to handle input blur
-  // const handleBlur = (field: any) => {
-  //     setFocused({ ...focused, [field]: false });
-  // };
+    setFocused({ ...focused, [field]: true });
+  };
 
   // Function to handle input changes
   const handleChange = (e: { target: { name: any; value: any } }) => {
-    const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })
-  }
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   // Function to handle form submission
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    // You can perform form validation or submit data here
-    console.log(formData)
-  }
+  const form = useRef<HTMLFormElement>(null);
 
-  const [capVal, setCapVal] = useState(null)
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs.sendForm('service_ve669e9', 'template_2mn8mhp', form.current, 'N9q0jIMksWEhRL1J5')
+        .then(() => {
+          console.log('SUCCESS!');
+          toast.success('Email sent successfully!');
+        }, (error) => {
+          console.log('FAILED...', error.text);
+          toast.error('Failed to send email.');
+        });
+    } else {
+      console.error("Form reference is null");
+    }
+  };
+
+  const [capVal, setCapVal] = useState(null);
 
   const submit = () => {
-    let hasError = false
+    let hasError = false;
 
     // Check for empty fields
     const newErrorState = {
       name: formData.name.length < 1,
       email: formData.email.length < 1,
       message: formData.message.length < 1,
-    }
+    };
 
-    setError(newErrorState)
+    setError(newErrorState);
 
     // Check if any required field is empty
     if (Object.values(newErrorState).some((field) => field)) {
-      toast.error('Please fill all required fields')
-      hasError = true
+      toast.error('Please fill all required fields');
+      hasError = true;
     }
 
     // Check email format only if all required fields are filled
     if (!hasError) {
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(formData.email)) {
-        toast.error('Please enter a valid email address')
-        hasError = true
+        toast.error('Please enter a valid email address');
+        hasError = true;
       }
     }
 
     if (!hasError) {
-      toast.success('Form submitted successfully')
+      toast.success('Form submitted successfully');
       setFormData({
         name: '',
         email: '',
         message: '',
-      })
+      });
     }
-  }
+  };
 
   return (
-    <StyledContactForm onSubmit={handleSubmit}>
+    <StyledContactForm ref={form} onSubmit={sendEmail}>
       <ToastContainer />
       <label>
         <input
@@ -131,11 +141,15 @@ export const ContactForm = () => {
           onChange={(val: any) => setCapVal(val)}
         />
       </div>
-      <button disabled={!capVal} type="submit" onClick={() => submit()}>
-        {t('Contact.send')}
-      </button>
+      <input
+        className='submit-btn'
+        disabled={!capVal}
+        type="submit"
+        value={t('Contact.send')}
+        onClick={() => submit()}
+      />
     </StyledContactForm>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

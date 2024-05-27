@@ -45,7 +45,7 @@ export const StyledContactForm = styled.form`
     }
   }
 
-  & > button {
+  & > .submit-btn {
     border: none;
     border-radius: 5px;
     box-shadow: 3px 2px 1px ${Colors.brandColor};
