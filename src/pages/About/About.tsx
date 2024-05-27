@@ -3,7 +3,6 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
-import AboutPageSlider from '../../components/Slider'
 import Accordion from '../../components/Accordion'
 
 const AboutPage = () => {
@@ -21,7 +20,6 @@ const AboutPage = () => {
         <link rel="cannonical" href="/about" />
       </Helmet>
       <div className="about-page-container">
-        <AboutPageSlider />
         <section className="about-section-1">
           <img
             alt="about-page-img"

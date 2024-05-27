@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import ProjectCard from '../../components/ProjectCard'
+import AboutPageSlider from '../../components/Slider'
 
 const ProjectsPage = () => {
   return (
@@ -11,6 +12,8 @@ const ProjectsPage = () => {
       </Helmet>
       <section className="section-tours" id="section-tours">
         <h2 className="heading-secondary">Our Projects</h2>
+        <AboutPageSlider />
+        <h2 className="heading-secondary">Latest Projects</h2>
         <div className="row">
           <ProjectCard
             heading={'The Sea Explorer'}

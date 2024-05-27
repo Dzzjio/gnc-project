@@ -5,6 +5,7 @@ import MobileMenu from '../MobileMenu/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNavicon } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import logo from '../../assets/Images/gnc-logo.jpg'
 
 const Header = () => {
   const [t, i18n] = useTranslation('global');
@@ -24,7 +25,7 @@ const Header = () => {
       <StyledHeaderContainer>
         <NavLink to="/">
           <img
-            src="https://png.pngtree.com/png-vector/20220831/ourmid/pngtree-banyan-tree-logo-design-vector-png-image_6131481.png"
+            src={logo}
             alt="logo"
           />
         </NavLink>

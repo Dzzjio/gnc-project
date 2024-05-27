@@ -16,9 +16,21 @@
     "rights": "All Rights Reserved"
   },
   "Home": {
-    "title": "GNC",
+    "title": "Geonatural corporation",
     "projects": "Projects",
-    "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?"
+    "mainObjectives": "Main Objectives",
+    "objectivesOne": "Facilitating the development of effective quality and environmental strategies and policies in Georgia.",
+    "objectivesTwo": "Facilitating the creation of effective legal, regulatory and structural framework for market oriented reforms and harmonization with best western (EU) standards in the fields of quality and environment protection.",
+    "objectivesThree": "Public advocacy, building public awareness, encouraging public participation and civil society control in the fields of quality and environmental protection.",
+    "objectivesFour": "Promoting good governance, transparent and informed decision making in quality and environmental sectors.",
+    "objectivesFive": "Professional support to local and regional development programs and projects of strategic significance related to quality and environment.",
+
+    "mainActivities": "Main Activities",
+    "activityOne": "Conducting environmental and social researches and consulting services.",
+    "activityTwo": "Developing documentation in line with Georgian legislation (Environmental and Social Impact Assessments (ESIA); Initial Environmental Examinations (IEE); Environmental Policy Frameworks; Strategic Environmental Assessment (SEA) to obtain positive ecological decisions and related permits from the State institutions.",
+    "activityThree": "Delivering innovative solutions and helping different organizations to understand and manage their sustainability challenges.",
+    "activityFour": "Developing documentation in line with international E&S Standards (IFC PSs, Asian Development Bank (ADB) Safeguard Policy Statement (SPS), 2009; World Bank Group General Environmental, Health and Safety (EHS) Guidelines, April 2007; World Bank Group EHS Guidelines for Water and Sanitation; International Labor Organization (ILO) conventions covering core labor standards and the basic terms and conditions of employment, etc.) to obtain financing from International Financing Institutions (IFI).",
+    "activityFive": "Developing and introducing Environmental and Social Management System (ESMS) for different companies and helping them to obtain ISO 14001:2015 on Environmental Management Systems and ISO 45001:2018 on Occupational Health and Safety Management Systems. "
   },
   "About": {
     "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?",

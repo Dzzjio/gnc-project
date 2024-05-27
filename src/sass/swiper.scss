@@ -4,10 +4,26 @@
 }
 
 .swiper-slide {
-    height: 100px;
-    background-color: gray;
-    text-align: center;
-    color: white;
+    height: 300px;
+    text-align: start;
+    background-color: #B0D5C7;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+
+    & > p  {
+        color: #42665C;
+
+        & > strong {
+            color: black;
+        }
+    }
+}
+
+.projects-index {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 }
 
 .swiper-button-next:after,

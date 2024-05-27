@@ -21,14 +21,26 @@ const HomeSectionTwo = () => {
             <div className='home-section-2-animation' >
                 <img className='home-scroll-img-1' alt='home-img-1' src={jungle} data-aos='fade-up'/>
                 <div data-aos='fade-down'>
-                    <h2>{t('Home.lorem')}</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates ratione, repellendus dignissimos enim velit autem quibusdam sed delectus nesciunt animi optio? Doloremque odio culpa quae nisi facere sunt consequuntur.</p>
+                    <h2>{t('Home.mainObjectives')}</h2>
+                    <ul>
+                        <li>{t('Home.objectivesOne')}</li>
+                        <li>{t('Home.objectivesTwo')}</li>
+                        <li>{t('Home.objectivesThree')}</li>
+                        <li>{t('Home.objectivesFour')}</li>
+                        <li>{t('Home.objectivesFive')}</li>
+                    </ul>
                 </div>
             </div>
             <div className='home-section-2-animation' >
                 <div data-aos='fade-up'>
-                    <h2>{t('Home.lorem')}</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates ratione, repellendus dignissimos enim velit autem quibusdam sed delectus nesciunt animi optio? Doloremque odio culpa quae nisi facere sunt consequuntur.</p>
+                <h2>{t('Home.mainActivities')}</h2>
+                <ul>
+                    <li>{t('Home.activityOne')}</li>
+                    <li>{t('Home.activityTwo')}</li>
+                    <li>{t('Home.activityThree')}</li>
+                    <li>{t('Home.activityFour')}</li>
+                    <li>{t('Home.activityFive')}</li>
+                </ul>
                 </div>
                 <img className='home-scroll-img' alt='home-img-2' src={jungle} data-aos='fade-down'/>
             </div>
