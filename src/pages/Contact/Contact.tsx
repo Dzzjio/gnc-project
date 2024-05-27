@@ -40,7 +40,7 @@ const ContactPage = () => {
                 <FontAwesomeIcon icon={faPhone} />
               </span>
               <p>{t('Contact.ContactUsDirectly')}</p>
-              <span>(+995) 599 98 66 00</span>
+              <span>(+995) 597728871</span>
             </div>
             <div className="contact-us-box">
               <span className="contact-us-logo">
