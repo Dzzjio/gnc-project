@@ -4,7 +4,7 @@ import { Colors } from '../../utils/Constants'
 export const StyledFooter = styled.footer`
   border-top: 1px solid gray;
   width: 100%;
-  position: relative;
+  // position: absolute;
   bottom: 0;
   background-color: ${Colors.brandColor};
 

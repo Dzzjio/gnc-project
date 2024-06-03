@@ -7,12 +7,17 @@
   font-family: 'Noto Sans Georgian';
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(218, 232, 218);
   overflow: auto;
   height: auto;
+  position: relative;
 }
 
 code {
