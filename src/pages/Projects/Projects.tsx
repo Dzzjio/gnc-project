@@ -1,6 +1,6 @@
-import { Helmet } from 'react-helmet-async'
-import ProjectCard from '../../components/ProjectCard'
-import AboutPageSlider from '../../components/Slider'
+import { Helmet } from 'react-helmet-async';
+import ProjectCard from '../../components/ProjectCard';
+import AboutPageSlider from '../../components/Slider';
 
 const ProjectsPage = () => {
   return (
@@ -8,7 +8,7 @@ const ProjectsPage = () => {
       <Helmet>
         <title>Projects</title>
         <meta name="description" content="Project Page GNC." />
-        <link rel="cannonical" href="/projects" />
+        <link rel="canonical" href="/projects" />
       </Helmet>
       <section className="section-tours" id="section-tours">
         <h2 className="heading-secondary">Our Projects</h2>
@@ -36,7 +36,7 @@ const ProjectsPage = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default ProjectsPage
+export default ProjectsPage;

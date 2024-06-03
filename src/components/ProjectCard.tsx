@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
-import Button from './UI/Button'
+import { Link } from 'react-router-dom';
+import Button from './UI/Button';
 
 interface ProjectCardProps {
-  heading: string
-  text: string
-  price: number
-  link: string
+  heading: string;
+  text: string;
+  price: number;
+  link: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ heading, text, price, link }) => {
@@ -27,14 +27,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ heading, text, price, link })
               <p className="card__price-only">Only</p>
               <p className="card__price-value">${price}</p>
             </div>
-            <Link to={`${link}`}>
-              <Button text={'Learn More!'} />
+            <Link to={link}>
+              <Button text="Learn More!" />
             </Link>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
