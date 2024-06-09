@@ -1,6 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { StyledProjectDetailsPage } from './styled';
+import leftbg from '../../assets/Images/jungle.jpg'
+import Button from '../../components/UI/Button';
+import { useTranslation } from 'react-i18next';
+const [t] = useTranslation('global')
 
 const projectData = [
   {
@@ -40,9 +44,17 @@ const ProjectDetailPage = () => {
         <link rel="canonical" href={`/projects/${id}`} />
       </Helmet>
       <StyledProjectDetailsPage>
-        <h1>{project.heading}</h1>
-        <p>{project.text}</p>
-        <p>Price: ${project.price}</p>
+        <div>
+          <img src={leftbg} alt="left-bg" />
+        </div>
+        <div>
+          <h1>{project.heading}</h1>
+          <p>{project.text}</p>
+          <p>Price: ${project.price}</p>
+        </div>
+        <Link to="projects">
+              <Button text={t('Home.projects')} />
+            </Link>
       </StyledProjectDetailsPage>
     </>
   );
