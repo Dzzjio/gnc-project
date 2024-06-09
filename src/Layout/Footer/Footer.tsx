@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { StyledFooter } from './styled'
 import { useTranslation } from 'react-i18next'
+import logo from '../../assets/Images/gnc-logo.jpg'
 
 const Footer = () => {
   const [t] = useTranslation('global')
@@ -10,12 +11,12 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-content-elements">
-            <img
-              src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png"
-              alt="logo"
-              width={50}
-              height={50}
-            />
+          <img
+            src={logo}
+            alt="logo"
+            width={50}
+            height={50}
+          />
             <p>{t('Footer.lorem')}</p>
             <span className="header-top-icons">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
