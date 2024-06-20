@@ -1,6 +1,7 @@
 export const Colors = {
   brandColor: '#30584d',
   brandColorTransparent: 'rgba(34, 140, 34, .8)',
+  brandColorGradient: 'linear-gradient(135deg, #5d867a, #30584D);'
 }
 
 export const Transition = {

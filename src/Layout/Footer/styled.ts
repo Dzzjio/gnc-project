@@ -6,7 +6,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   // position: absolute;
   bottom: 0;
-  background-color: ${Colors.brandColor};
+  background: ${Colors.brandColorGradient};
 
   .footer-container {
     width: 80vw;

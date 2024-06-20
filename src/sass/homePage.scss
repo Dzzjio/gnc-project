@@ -36,24 +36,18 @@
     width: 80vw;
     margin: 0 auto;
 
-    h2{
-        text-align: center;
-        color: #30584d;
-        font-weight: 900;
-    }
 
     .home-section-2-animation ul > li {
         list-style: none;
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .star > * {
         width: 20px;
         height: 20px;
-        fill: #30584d;
     }
 }
 

@@ -1,16 +1,16 @@
 .button {
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 3px 2px 1px #30584D;
     width: max-content;
     margin: 15px 0px;
-    padding: 10px 40px;
+    padding: 20px 50px;
     font-size: 15px;
     cursor: pointer;
     align-items: start;
 
     &:hover {
-        background-color: #30584D;
+        background: linear-gradient(135deg, #5d867a, #30584D);
         color: white;
     }
 

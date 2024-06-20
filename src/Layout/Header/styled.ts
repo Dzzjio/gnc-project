@@ -53,14 +53,13 @@ export const StyledHeaderContainer = styled.header`
 
         &:hover {
           border-radius: 5px;
-          border-bottom: 2px solid ${Colors.brandColor};
           color: white;
-          background-color: ${Colors.brandColor};
+          background: linear-gradient(135deg, #a3c3b8, #5d867a, #30584D);
         }
 
         &.active {
           color: white;
-          background-color: ${Colors.brandColor};
+          background: linear-gradient(135deg, #5d867a, #30584D);
           border-radius: 5px;
         }
       }

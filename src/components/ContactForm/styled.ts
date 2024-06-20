@@ -47,17 +47,17 @@ export const StyledContactForm = styled.form`
 
   & > .submit-btn {
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: 3px 2px 1px ${Colors.brandColor};
     width: max-content;
     margin: 15px 0px;
-    padding: 10px 40px;
+    padding: 20px 50px;
     font-size: 15px;
     cursor: pointer;
     align-items: start;
 
     &:hover {
-      background-color: ${Colors.brandColor};
+      background-color: ${Colors.brandColorGradient};
       color: white;
     }
 

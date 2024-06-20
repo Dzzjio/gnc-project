@@ -14,7 +14,7 @@ html, body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(218, 232, 218);
+  background: radial-gradient(circle, white, rgb(206, 221, 206), rgb(198, 207, 198));
   overflow: auto;
   height: auto;
   position: relative;

@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Accordion from '../../components/Accordion'
+import SponsorsSlider from '../../components/sponsorsSlider'
 
 const AboutPage = () => {
   useEffect(() => {
@@ -50,6 +51,9 @@ const AboutPage = () => {
             <p>{t('About.lorem')}</p>
           </div>
         </section>
+        <div className="sponsors" data-aos="fade-up">
+          <SponsorsSlider />  
+        </div>
       </div>
     </>
   )
