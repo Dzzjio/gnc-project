@@ -51,10 +51,11 @@ export const StyledContactForm = styled.form`
     box-shadow: 3px 2px 1px ${Colors.brandColor};
     width: max-content;
     margin: 15px 0px;
-    padding: 20px 50px;
+    padding: 15px 50px;
     font-size: 15px;
     cursor: pointer;
     align-items: start;
+    background: linear-gradient(135deg, white, lightgray);
 
     &:hover {
       background-color: ${Colors.brandColorGradient};

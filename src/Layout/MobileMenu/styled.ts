@@ -24,7 +24,7 @@ export const MobileMenuContent = styled.div`
   top: 0;
   width: 430px;
   height: 100vh;
-  background-color: #fff;
+  background: linear-gradient(35deg, white, #88aaa0);
   z-index: 112;
 
   transition: right 0.3s ease-in-out;

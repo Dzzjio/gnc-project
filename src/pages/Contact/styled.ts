@@ -33,7 +33,7 @@ export const ContactPageLeft = styled.div`
   }
 
   div.contact-us-box {
-    background-color: white;
+    background: linear-gradient(135deg, white, lightgray);
     height: 150px;
     width: 200px;
     display: flex;
