@@ -3,8 +3,8 @@ import { Breakpoints, Colors } from '../../utils/Constants'
 
 export const StyledHeader = styled.header`
   border-bottom: 1px solid gray;
-  background-color: white;
-`
+  background: linear-gradient(135deg, white, lightgray);
+`;
 
 export const StyledHeaderContainer = styled.header`
   max-width: 80vw;
@@ -47,9 +47,8 @@ export const StyledHeaderContainer = styled.header`
       & > a {
         text-decoration: none;
         color: black;
-        transition: all 0.2s ease-in-out;
-        padding: 3px 6px;
-        border: 2px solid transparent;
+        transition: all .1s ease-in-out;
+        padding: 10px 20px;
 
         &:hover {
           border-radius: 5px;
@@ -59,7 +58,7 @@ export const StyledHeaderContainer = styled.header`
 
         &.active {
           color: white;
-          background: linear-gradient(135deg, #5d867a, #30584D);
+          background: linear-gradient(135deg, #7da395, #4b6e62, #3a564a);
           border-radius: 5px;
         }
       }
@@ -87,4 +86,5 @@ export const StyledLangOptions = styled.select`
   border: none;
   border-bottom: 2px solid #30584d;
   outline: none;
+  background-color: transparent;
 `
