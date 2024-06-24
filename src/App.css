@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.header-container {
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container.show {
+  transform: translateY(0);
+}
+
+.header-container.hide {
+  transform: translateY(-100%);
+}
