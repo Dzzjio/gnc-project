@@ -1,13 +1,13 @@
 {
   "Header": {
     "home": "Home",
-    "about": "about",
+    "about": "About",
     "contact": "Contact",
     "projects": "Projects"
   },
   "Footer": {
     "home": "Home",
-    "about": "about",
+    "about": "About",
     "contact": "Contact",
     "projects": "Projects",
     "quickLinks": "Quick Links",
