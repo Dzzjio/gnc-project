@@ -20,7 +20,7 @@ const HomePage = () => {
         <section className="home-section-1">
           <img className="home-first-image" src={jungle} alt="jung" />
           <div>
-            <h1>{t('Home.title')}</h1>
+            {<h1>{t('Home.title')}</h1>}
             <Link to="projects">
               <Button text={t('Home.projects')} />
             </Link>

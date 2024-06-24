@@ -9,11 +9,13 @@ export const StyledProjectDetailsPage = styled.div`
   > div:first-child {
     flex: 1;
     max-width: 50%;
+    margin-bottom: -100px;
     img {
       width: 100%;
       height: 100%;
       display: block;
       object-fit: cover;
+      margin-top: -100px;
     }
   }
   
