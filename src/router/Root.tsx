@@ -33,7 +33,9 @@ const Root = () => {
         <HeaderTop />
         <Header />
       </div>
-      <Outlet />
+      <div style={{marginTop: '210px'}}>
+        <Outlet />
+      </div>
       <Footer />
       {showScrollButton && (
         <button className="scroll-to-top" onClick={scrollToTop}>
