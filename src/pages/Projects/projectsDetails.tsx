@@ -5,35 +5,66 @@ import leftbg from '../../assets/Images/jungle.jpg';
 import Button from '../../components/UI/Button';
 import { useTranslation } from 'react-i18next';
 
-const projectData = [
+interface Project {
+  id: string;
+  heading: string;
+  text: string;
+  details?: string;
+}
+
+const projectData: Project[] = [
   {
     id: '0',
-    heading: 'The Sea Explorer',
-    text: 'Detailed description of The Sea Explorer.',
-    price: 100,
+    heading: 'გარემოს დაცვა',
+    text: 'ეროვნული გარემოსდაცვითი კანონმდებლობის და საერთაშორისო საფინანსო ორგანიზაციების რეგულაცების შესაბამისი გარემოსდაცვითი დოკუმენტაციბის მომზადება.',
+    details: `
+      გარემოს ზემოქმედების შეფასების ანგარიშის მომზადება
+      სტრატეგიული გარემოსდაცვითი ანგარიშის მომზადება
+      ზურმუხტის ქსელზე ზემოქმედების შეფასების ანგარიში
+      ბიომრავალფეროვნების დეტალური კვლევა, შერბილების და მონიტორინგის გეგმის მომზადება
+      კონსულტაციები გარემოსდაცვითი გადაწყვეტილების პირობების შესრულების მიზნით
+      ზღრულად დასაშვები ჩაშვების (ზდჩ) ნორმების პროექტის მომზადება
+      ზღრულად დასაშვები გაფრქვევის (ზდგ) ნორმების პროექტის მომზადება
+      გარემოსდაცვითი მართვის გეგმის და გარემოსდაცვითი გეგმის მომზადება
+      ნარჩენების მართვის გეგმის მომზადება
+    `
   },
   {
     id: '1',
-    heading: 'The Forest Hiker',
-    text: 'Detailed description of The Forest Hiker.',
-    price: 478,
+    heading: 'შრომის უსაფრთხოება',
+    text: 'Develop Health and Safety manegment system and risk assesment.',
+    details: `
+    Policy and Commitment
+    Planning
+    Implementation and Operation
+    Performance Evaluation
+    Management Review
+    Risk Assessment
+  `,
   },
   {
     id: '2',
-    heading: 'The Snow Adventurer',
-    text: 'Detailed description of The Snow Adventurer.',
-    price: 615,
+    heading: 'სოციალური საკითხები',
+    text: 'დეტალური აზომვთი კვლევა,',
   },
 ];
 
 const ProjectDetailPage = () => {
-  const { id } = useParams();
-  const project = projectData.find((project) => project.id === id);
+  const { id } = useParams<{ id: string }>();
   const [t] = useTranslation('global');
+  const project = projectData.find((project) => project.id === id);
 
   if (!project) {
     return <div>Project not found</div>;
   }
+
+  // Check if project.details exists before accessing
+  const detailsList = project.details
+    ? project.details
+        .split('\n')
+        .map((item) => item.trim())
+        .filter((item) => item !== '')
+    : [];
 
   return (
     <>
@@ -49,10 +80,14 @@ const ProjectDetailPage = () => {
         <div>
           <h1>{project.heading}</h1>
           <p>{project.text}</p>
-          <p>Price: ${project.price}</p>
-        <Link to="/projects">
-          <Button text={t('Home.projects')} />
-        </Link>
+          <ul>
+            {detailsList.map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
+          </ul>
+          <Link to="/projects">
+            <Button text={t('Home.projects')} />
+          </Link>
         </div>
       </StyledProjectDetailsPage>
     </>

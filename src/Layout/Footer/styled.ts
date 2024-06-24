@@ -34,6 +34,10 @@ export const StyledFooter = styled.footer`
     & > * {
       color: #a8d0c5;
       text-decoration: none;
+
+      &:hover {
+      color: white;
+      }
     }
   }
 

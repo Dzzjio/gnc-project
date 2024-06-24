@@ -16,7 +16,7 @@
     "rights": "All Rights Reserved"
   },
   "Home": {
-    "title": "Geonatural corporation",
+    "title": "Geo-Natural Corporation",
     "projects": "Projects",
     "mainObjectives": "Main Objectives",
     "objectivesOne": "Facilitating the development of effective quality and environmental strategies and policies in Georgia.",
@@ -33,12 +33,18 @@
     "activityFive": "Developing and introducing Environmental and Social Management System (ESMS) for different companies and helping them to obtain ISO 14001:2015 on Environmental Management Systems and ISO 45001:2018 on Occupational Health and Safety Management Systems. "
   },
   "About": {
-    "lorem": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat minus excepturi officia molestias incidunt dignissimos adipisci sunt maxime et deserunt autem architecto fuga, alias consequuntur vero quod, dolores earum?",
+    "lorem": "Our consulting company, established in 2017, specializes in environmental protection and safety. We collaborate extensively with both public and private sector organizations. Our portfolio includes significant contributions to the development of infrastructural projects and production facilities of various scales.",
     "faq": "Frequently Asked Questions",
-    "answer1": "Content for section 1",
-    "answer2": "Content for section 2",
-    "answer3": "Content for section 3",
-    "answer4": "Content for section 4"
+    "question1": "What sets your consulting services apart in environmental protection and safety?",
+    "question2": "How does your company engage with stakeholders and the community?",
+    "question3": "What outcomes can clients expect from your services?",
+    "question4": "How does your company stay updated with evolving standards and regulations?",
+    "question5": "How does your company contribute to local and regional development?",
+    "answer1": "We integrate international best practices with local regulations, ensuring comprehensive solutions tailored to client needs for environmental sustainability and safety.",
+    "answer2": "We prioritize public advocacy, awareness-building, and stakeholder engagement to ensure transparency and accountability in environmental initiatives.",
+    "answer3": "Clients can achieve improved environmental performance, regulatory compliance, enhanced stakeholder relations, and support for sustainable development goals.",
+    "answer4": "We stay informed through collaboration with international bodies, ongoing monitoring of regulatory changes, and continuous professional development to provide current guidance on environmental management and sustainability.",
+    "answer5": "We support local and regional programs with strategic advice on environmental and quality-related issues, promoting sustainable practices and capacity building."
   },
   "Contact": {
     "getInTouch": "Get In Touch!",

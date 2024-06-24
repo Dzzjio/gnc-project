@@ -3,9 +3,9 @@ import ProjectCard from '../../components/ProjectCard';
 import AboutPageSlider from '../../components/Slider';
 
 const projects = [
-  { id: '0', heading: 'The Sea Explorer', text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dignissimos hic quod enim explicabo facilis nihil magni, rerum dicta praesentium, exercitationem vel sunt repellat animi ab totam illum! Et, minus.', price: 100 },
-  { id: '1', heading: 'The Forest Hiker', text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dignissimos hic quod enim explicabo facilis nihil magni, rerum dicta praesentium, exercitationem vel sunt repellat animi ab totam illum! Et, minus.', price: 478 },
-  { id: '2', heading: 'The Snow Adventurer', text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dignissimos hic quod enim explicabo facilis nihil magni, rerum dicta praesentium, exercitationem vel sunt repellat animi ab totam illum! Et, minus.', price: 615 },
+  { id: '0', heading: 'გარემოს დაცვა', text: 'ეროვნული გარემოსდაცვითი კანონმდებლობის და საერთაშორისო საფინანსო ორგანიზაციების რეგულაცების შესაბამისი გარემოსდაცვითი დოკუმენტაციბის მომზადება.', price: 100 },
+  { id: '1', heading: 'შრომის უსაფრთხოება', text: 'Develop Health and Safety manegment systemand risk assesment.', price: 478 },
+  { id: '2', heading: 'სოციალური მომსახურეობა', text: 'დეტალური აზომვთი კვლევა,', price: 615 },
 ];
 
 const ProjectsPage = () => {
@@ -17,7 +17,7 @@ const ProjectsPage = () => {
         <link rel="canonical" href="/projects" />
       </Helmet>
       <section className="section-tours" id="section-tours">
-        <h2 className="heading-secondary">Latest Projects</h2>
+        <h2 className="heading-secondary">ძირითადი მიმართულებები</h2>
         <div className="row">
           {projects.map(project => (
             <ProjectCard

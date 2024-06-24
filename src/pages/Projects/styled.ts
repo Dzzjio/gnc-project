@@ -27,7 +27,7 @@ export const StyledProjectDetailsPage = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 50px;
     
     h1 {
       font-size: 50px;

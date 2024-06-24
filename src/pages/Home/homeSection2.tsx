@@ -73,9 +73,9 @@ const HomeSectionTwo = () => {
                 <img className='home-scroll-img' alt='home-img-2' src={jungle} data-aos='fade-down'/>
             </div>
         </section>
-        <section className="home-section-3">
+        {/* <section className="home-section-3">
             <img alt="woods-home" src={jungle} data-aos='fade-up'/>
-        </section>
+        </section> */}
         </>
     )
 }

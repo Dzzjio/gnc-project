@@ -28,8 +28,7 @@ const AboutPage = () => {
             data-aos="fade-down"
           />
           <div data-aos="fade-up">
-            <h1>{t('About.lorem')}</h1>
-            <p>{t('About.lorem')}</p>
+            <h2>{t('About.lorem')}</h2>
           </div>
         </section>
         <section className="about-section-2">
@@ -41,14 +40,12 @@ const AboutPage = () => {
         </section>
         <section className="about-section-3">
           <div className="accordion" data-aos="fade-down">
-            <Accordion title="Section 1" content={t('About.answer1')} />
-            <Accordion title="Section 2" content={t('About.answer2')} />
-            <Accordion title="Section 3" content={t('About.answer3')} />
-            <Accordion title="Section 4" content={t('About.answer4')} />
-          </div>
-          <div className="faq" data-aos="fade-up">
             <h2>{t('About.faq')}</h2>
-            <p>{t('About.lorem')}</p>
+            <Accordion title={t('About.question1')} content={t('About.answer1')} />
+            <Accordion title={t('About.question2')} content={t('About.answer2')} />
+            <Accordion title={t('About.question3')} content={t('About.answer3')} />
+            <Accordion title={t('About.question4')} content={t('About.answer4')} />
+            <Accordion title={t('About.question5')} content={t('About.answer5')} />
           </div>
         </section>
         <div className="sponsors" data-aos="fade-up">

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Button from '../../components/UI/Button'
-import jungle from '../../assets/Images/jungle.jpg'
+// import jungle from '../../assets/Images/jungle.jpg'
+import bgBattery from '../../assets/Images/bg-sun-battery.webp'
 import HomeSectionTwo from './homeSection2'
 
 const HomePage = () => {
@@ -18,7 +19,7 @@ const HomePage = () => {
       </Helmet>
       <main id="home-page-container">
         <section className="home-section-1">
-          <img className="home-first-image" src={jungle} alt="jung" />
+          <img className="home-first-image" src={bgBattery} alt="jung" />
           <div>
             {<h1>{t('Home.title')}</h1>}
             <Link to="projects">

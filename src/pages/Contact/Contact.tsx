@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import ContactForm from '../../components/ContactForm'
 
+// es page wavshalo da modalad gavitano
+
 const ContactPage = () => {
   const [t] = useTranslation('global')
 
