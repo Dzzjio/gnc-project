@@ -6,7 +6,7 @@
     & > div {
         position: absolute;
         width: 80vw;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -16,9 +16,7 @@
         & > h1 {
             font-size: 100px;
             text-align: center;
-            background: linear-gradient(180deg, #b5cec5, #30584d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: black;
 
             @media (max-width: 450px) {
                 font-size: 50px;
