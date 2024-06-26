@@ -1,5 +1,5 @@
 .accordion {
-    margin-bottom: 15px;  
+    margin-bottom: 25px;  
     border-radius: 5px;
     width: 100%;
     border-radius: 10px;
@@ -11,18 +11,17 @@
     align-items: center;
     padding: 20px;
     cursor: pointer;
-    background: linear-gradient(to left, #829791 10%, white);
+    background: linear-gradient(to left, #b5c4bf 10%, white);
     border-radius: 10px;
     gap: 10px;
 
     &:hover {
-      background: linear-gradient(to left, #829791 50%, white);
+      background: linear-gradient(to left, #7ea096 50%, white);
   
     }
   }
   
   .accordion-title {
-    font-weight: bold;
     background-color: transparent;
   }
   

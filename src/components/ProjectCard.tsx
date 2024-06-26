@@ -19,13 +19,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ heading, text, price, link })
           </h4>
           <div className="card__details">
             <p>{text}</p>
+            {/* <Link to={link}>
+              <Button text="Learn More!" />
+            </Link> */}
           </div>
         </div>
         <div className="card__side card__side--back card__side--back-1">
           <div className="card__cta">
             <div className="card__price-box">
-              <p className="card__price-only">Only</p>
-              <p className="card__price-value">${price}</p>
+              {/* <p className="card__price-only">Only</p> */}
+              {/* <p className="card__price-value">${price}</p> */}
             </div>
             <Link to={link}>
               <Button text="Learn More!" />

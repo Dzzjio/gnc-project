@@ -3,7 +3,8 @@ import { Breakpoints, Colors } from '../../utils/Constants'
 
 export const StyledHeader = styled.header`
   border-bottom: 1px solid gray;
-  background: linear-gradient(135deg, white, lightgray);
+  // background: linear-gradient(135deg, white, rgb(214, 214, 214));
+  background-color: white;
 `;
 
 export const StyledHeaderContainer = styled.header`

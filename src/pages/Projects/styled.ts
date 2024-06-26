@@ -10,6 +10,7 @@ export const StyledProjectDetailsPage = styled.div`
     flex: 1;
     max-width: 50%;
     margin-bottom: -100px;
+
     img {
       width: 100%;
       height: 100%;

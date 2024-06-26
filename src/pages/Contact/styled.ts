@@ -33,7 +33,7 @@ export const ContactPageLeft = styled.div`
   }
 
   div.contact-us-box {
-    background: linear-gradient(135deg, white, lightgray);
+    // background: linear-gradient(135deg, white, lightgray);
     height: 150px;
     width: 200px;
     display: flex;
@@ -41,7 +41,7 @@ export const ContactPageLeft = styled.div`
     justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 3px 2px 1px ${Colors.brandColor};
+    // box-shadow: 3px 2px 1px ${Colors.brandColor};
 
     @media ( max-width:  ${Breakpoints.tablet}) {
       width: 100%;
@@ -59,7 +59,7 @@ export const ContactPageLeft = styled.div`
     &:hover {
       transform: scale(1.05);
       ${Transition.veryFast};
-      box-shadow: 5px 4px 1px ${Colors.brandColor};
+      box-shadow: 3px 2px 5px ${Colors.brandColor};
     }
   }
 

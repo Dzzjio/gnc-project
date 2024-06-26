@@ -25,7 +25,7 @@ export const StyledContactForm = styled.form`
 
     & > input,
     textarea {
-      border: none;
+      border: 1px solid black;
       border-radius: 5px;
       padding: 15px;
       font-size: 15px;
@@ -38,8 +38,8 @@ export const StyledContactForm = styled.form`
       }
 
       &:focus {
-        outline: none;
-        box-shadow: 5px 4px 1px ${Colors.brandColor};
+        outline: 1px solid black;
+        // box-shadow: 5px 4px 1px ${Colors.brandColor};
         transition: ${Transition.slow};
       }
     }
@@ -47,23 +47,23 @@ export const StyledContactForm = styled.form`
 
   & > .submit-btn {
     border: none;
-    border-radius: 25px;
-    box-shadow: 3px 2px 1px ${Colors.brandColor};
+    border-radius: 10px;
     width: max-content;
     margin: 15px 0px;
-    padding: 15px 50px;
+    padding: 15px 40px;
     font-size: 15px;
     cursor: pointer;
     align-items: start;
-    background: linear-gradient(135deg, white, lightgray);
+    background: linear-gradient(135deg, white, rgb(218, 218, 218));
 
     &:hover {
-      background-color: ${Colors.brandColorGradient};
-      color: white;
+        background: linear-gradient(135deg, #5d867a, #30584D);
+        color: white;
     }
 
     &:active {
-      box-shadow: 2px 1px 1px ${Colors.brandColor};
+        background: linear-gradient(135deg, white, rgb(218, 218, 218));
+        color: black;
     }
   }
 
