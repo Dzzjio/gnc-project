@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>GNC - Home</title>
         <meta name="description" content="Home Page GNC." />
         <link rel="cannonical" href="/" />
       </Helmet>

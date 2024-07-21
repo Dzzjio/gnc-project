@@ -8,7 +8,7 @@ interface ProjectCardProps {
   link: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ heading, text, price, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ heading, text, link }) => {
   return (
     <div className="col-1-of-3">
       <div className="card">
