@@ -12,7 +12,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Projects</title>
+        <title>GNC - Projects</title>
         <meta name="description" content="Project Page GNC." />
         <link rel="canonical" href="/projects" />
       </Helmet>

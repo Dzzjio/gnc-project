@@ -14,7 +14,7 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact</title>
+        <title>GNC - Contact</title>
         <meta name="description" content="Contact Us GNC." />
         <link rel="cannonical" href="/contact" />
       </Helmet>
