@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Accordion from '../../components/Accordion'
 import SponsorsSlider from '../../components/sponsorsSlider'
+import aboutForest from '../../assets/Images/about-page-forest.jpg'
+import ecoComunity from '../../assets/Images/eco-comunity.jpg'
 
 const AboutPage = () => {
   useEffect(() => {
@@ -24,7 +26,7 @@ const AboutPage = () => {
         <section className="about-section-1">
           <img
             alt="about-page-img"
-            src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png"
+            src={ecoComunity}
             data-aos="fade-down"
           />
           <div data-aos="fade-up">
@@ -34,7 +36,7 @@ const AboutPage = () => {
         <section className="about-section-2">
           <img
             alt="woods"
-            src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png"
+            src={aboutForest}
             data-aos="fade-up"
           />
         </section>

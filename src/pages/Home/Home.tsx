@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Button from '../../components/UI/Button'
 // import jungle from '../../assets/Images/jungle.jpg'
-import bgBattery from '../../assets/Images/bg-sun-battery.webp'
+// import bgBattery from '../../assets/Images/bg-sun-battery.webp'
 import HomeSectionTwo from './homeSection2'
+import landingBG from '../../assets/Images/forrest.jpeg'
 
 const HomePage = () => {
   const [t] = useTranslation('global')
@@ -19,7 +20,7 @@ const HomePage = () => {
       </Helmet>
       <main id="home-page-container">
         <section className="home-section-1">
-          <img className="home-first-image" src={bgBattery} alt="jung" />
+          <img className="home-first-image" src={landingBG} alt="jung" />
           <div>
             {<h1>{t('Home.title')}</h1>}
             <Link to="projects">

@@ -1,8 +1,9 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import jungle from '../../assets/Images/jungle.jpg'
 import { useTranslation } from 'react-i18next'
+import activities from '../../assets/Images/activities.jpg'
+import strategy from '../../assets/Images/strategy.jpg'
 
 const HomeSectionTwo = () => {
 
@@ -19,7 +20,7 @@ const HomeSectionTwo = () => {
         <>
         <section className='home-section-2'>
             <div className='home-section-2-animation' >
-                <img className='home-scroll-img-1' alt='home-img-1' src={jungle} data-aos='fade-up'/>
+                <img className='home-scroll-img-1' alt='home-img-1' src={strategy} data-aos='fade-up'/>
                 <div data-aos='fade-down'>
                     <h2>{t('Home.mainObjectives')}</h2>
                     <ul className="objectives-list">
@@ -47,8 +48,8 @@ const HomeSectionTwo = () => {
             </div>
             <div className='home-section-2-animation' >
                 <div data-aos='fade-up'>
-                <h2>{t('Home.mainActivities')}</h2>
-                <ul className="objectives-list">
+                    <h2>{t('Home.mainActivities')}</h2>
+                    <ul className="objectives-list">
                         <li className="objective-item">
                             <span>{t('Home.activityOne')}</span>
                         </li>
@@ -70,7 +71,7 @@ const HomeSectionTwo = () => {
                         </li>
                     </ul>
                 </div>
-                <img className='home-scroll-img' alt='home-img-2' src={jungle} data-aos='fade-down'/>
+                <img className='home-scroll-img' alt='home-img-2' src={activities} data-aos='fade-down'/>
             </div>
         </section>
         {/* <section className="home-section-3">

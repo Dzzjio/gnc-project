@@ -32,7 +32,7 @@ const projectData: Project[] = [
   {
     id: '1',
     heading: 'შრომის უსაფრთხოება',
-    text: 'Develop Health and Safety manegment system and risk assesment.',
+    text: 'Develop Health and Safety manegment system and risk assesment. ჯანმრთელობისა და უსაფრთხოების მართვის სისტემის და რისკის შეფასების შემუშავება.',
     details: `
     Policy and Commitment
     Planning

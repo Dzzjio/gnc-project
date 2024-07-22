@@ -16,8 +16,9 @@
         & > h1 {
             font-size: 100px;
             text-align: center;
-            color: black;
-
+            color: transparent;
+            -webkit-text-stroke: 2px black;
+            
             @media (max-width: 450px) {
                 font-size: 50px;
             }
@@ -37,6 +38,15 @@
     position: relative;
     width: 80vw;
     margin: 0 auto;
+
+    & > div.home-section-2-animation {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            object-fit: cover;
+        }
+    }
 
 
     .home-section-2-animation ul > li {

@@ -9,6 +9,21 @@
     flex-direction: row;
     width: 80vw;
     margin: 60px auto;
+    align-items: center;
+
+    & > img {
+        height: 40vh;
+        width: auto;
+        object-fit: cover;
+    }
+
+    & > div {
+        width: 50%;
+
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+    }
 
     @media (max-width: 900px) {
         flex-direction: column;
