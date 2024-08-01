@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Button from '../../components/UI/Button'
-// import jungle from '../../assets/Images/jungle.jpg'
-// import bgBattery from '../../assets/Images/bg-sun-battery.webp'
 import HomeSectionTwo from './homeSection2'
-import landingBG from '../../assets/Images/forrest.jpeg'
+import landingBG from '../../assets/Images/landing.jpg'
 
 const HomePage = () => {
   const [t] = useTranslation('global')
